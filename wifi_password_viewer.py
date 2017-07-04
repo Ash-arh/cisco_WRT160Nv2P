@@ -13,18 +13,18 @@ def link_place():
    password_value = soup_finder.get('value')
    return "The wifi password is: {}" .format(password_value)      
  except:
-    return "something wrong, Be sure that you are connected to the wifi and the wlan is protected by password!"
+    return "Something wrong, Be sure that you are connected to the wifi and the wlan is protected by password!"
 
 def megg():
   messagebox.showinfo("info" ,link_place() )      
 
 guu = Tk()
-guu.title("password viewer")
+guu.title("Password viewer")
 guu.geometry("400x400")
 guu.configure(background="white")
 guu.resizable(width=False, height=False)
 
-nass1 = Label(guu, text="welcome to the wifi password viewer" , fg="#cc0000" ,bg="white")
+nass1 = Label(guu, text="Welcome to the wifi password viewer" , fg="#cc0000" ,bg="white")
 nass1.pack()
 nass1.place(x=50, y=15)
 nass1.config(font=('Arial', 13, ' bold '))
