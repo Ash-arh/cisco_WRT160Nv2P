@@ -35,7 +35,7 @@ zer1.pack(side=BOTTOM  ,padx = 3, pady = 25)
 
 zer2 = Button(guu, text="Show the password"  ,height = 3, width = 25 , fg="white", bg="#2196F3", command= megg)
 zer2.pack(side=LEFT)
-zer2.place(x=120, y=150)
+zer2.place(x=110, y=150)
 
 guu.mainloop()
 
