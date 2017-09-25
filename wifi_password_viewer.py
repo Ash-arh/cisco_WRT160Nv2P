@@ -10,7 +10,7 @@ def link_place():
    make_connection = requests.get(url, auth=(username, password))
    soup = BeautifulSoup(make_connection.content, 'html.parser')
    soup_finder = soup.find('input', {'name': 'wl_wpa_psk'})
-   password_value = soup_finder.get("value")
+   password_value = soup_finder['value']
    return "The wifi password is: {}" .format(password_value)      
  except:
     return "Something wrong, Be sure that you are connected to the wifi and the wlan is protected by password!"
